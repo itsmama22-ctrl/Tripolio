@@ -1,0 +1,134 @@
+[
+  {
+    "id": "azure-haven",
+    "name": "Azure Haven Boutique Hotel",
+    "price": "$245/night",
+    "rating": 4.8,
+    "location": {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "latitude": 38.7223,
+      "longitude": -9.1393
+    },
+    "amenities": ["Rooftop pool", "Local breakfast", "Ocean view suites", "Co-working lounge", "Airport transfer"],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Design-first stay in Lisbon’s creative quarter with sweeping rooftop views and curated city guides.",
+    "description": "Azure Haven Boutique Hotel offers a calm oasis among Lisbon's buzzing Bairro Alto district. Inspired by coastal hues and mid-century touches, each suite includes Dyson amenities and a personalized Tripolio city itinerary."
+  },
+  {
+    "id": "desert-dream",
+    "name": "Desert Dream Eco Retreat",
+    "price": "$310/night",
+    "rating": 4.9,
+    "location": {
+      "city": "Sedona",
+      "country": "USA",
+      "latitude": 34.8697,
+      "longitude": -111.761
+    },
+    "amenities": ["Solar powered", "Private hot tubs", "Guided hikes", "Stargazing deck", "Vegan tasting menu"],
+    "photos": [
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Off-grid luxury domes with panoramic desert views, tailored for conscious travelers.",
+    "description": "Desert Dream Eco Retreat blends architectural domes with regenerative hospitality. Enjoy zero-waste amenities, canyon yoga flows, and curated experiences from local Sedona guides."
+  },
+  {
+    "id": "nordic-nest",
+    "name": "Nordic Nest Lakeside Cabin",
+    "price": "$180/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Reykjavik",
+      "country": "Iceland",
+      "latitude": 64.1466,
+      "longitude": -21.9426
+    },
+    "amenities": ["Geothermal spa", "Glass roof bedrooms", "Arctic breakfast", "Sauna", "Guided aurora tours"],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Minimalist A-frame cabins with Nordic spa access and front-row aurora shows.",
+    "description": "Escape to geothermal-heated cabins framed by Iceland’s dramatic landscapes. Each stay includes access to an on-site sauna, private aurora alert system, and chef-led Arctic dining experiences."
+  },
+  {
+    "id": "urban-oasis",
+    "name": "Urban Oasis Loft Suites",
+    "price": "$220/night",
+    "rating": 4.7,
+    "location": {
+      "city": "Tokyo",
+      "country": "Japan",
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    },
+    "amenities": ["Smart check-in", "Tea bar", "City bikes", "Onsen access", "Soundproof rooms"],
+    "photos": [
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Serene loft suites in Shibuya, designed for travelers who balance adventure and mindfulness.",
+    "description": "Urban Oasis Loft Suites merge Japanese minimalism with smart hospitality. Guests enjoy guided tea ceremonies, co-working lounges, and curated itineraries through Tripolio’s city experts."
+  },
+  {
+    "id": "vineyard-villa",
+    "name": "Vineyard Villa & Spa",
+    "price": "$275/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Tuscany",
+      "country": "Italy",
+      "latitude": 43.7711,
+      "longitude": 11.2486
+    },
+    "amenities": ["Infinity pool", "Wine tastings", "Olive grove picnics", "Chef's table", "Wellness studio"],
+    "photos": [
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Tuscan estate surrounded by vineyards, with chef-led experiences and wellness rituals.",
+    "description": "The Vineyard Villa & Spa is a restored farmhouse artfully designed for immersive Tuscan stays. Enjoy sunrise vineyard meditations, Michelin-star dining, and private cellar tours curated by Tripolio."
+  },
+  {
+    "id": "coastal-collective",
+    "name": "Coastal Collective Surf House",
+    "price": "$190/night",
+    "rating": 4.4,
+    "location": {
+      "city": "Byron Bay",
+      "country": "Australia",
+      "latitude": -28.6474,
+      "longitude": 153.602
+    },
+    "amenities": ["Surf lessons", "Sunrise yoga", "Community dinners", "Creative studio", "Board rentals"],
+    "photos": [
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Slow-travel surf house with community vibes, creative workshops, and oceanfront suites.",
+    "description": "Coastal Collective Surf House is designed for travelers who crave intentional community. Wake up steps from Byron Bay’s best breaks, with daily programming curated by Tripolio beach hosts."
+  }
+]
