@@ -862,5 +862,92 @@
     "affiliateUrl": "https://www.booking.com/",
     "shortDescription": "Harbourfront floating cabins with Tripolio kayak tours and seaplane add-ons.",
     "description": "Vancouver Harbour Huts put you on the water with eco-minded floating cabins. Tripolio itineraries pair kayak explorations with seaplane trips over the Pacific North Coast."
+  },
+  {
+    "id": "marrakech-riads",
+    "name": "Medina Riad Collection",
+    "price": "$185/night",
+    "rating": 4.7,
+    "location": {
+      "city": "Marrakech",
+      "country": "Morocco",
+      "latitude": 31.6295,
+      "longitude": -7.9811
+    },
+    "amenities": [
+      "Rooftop breakfast",
+      "Hammam spa",
+      "Courtyard pool",
+      "Guided souk tours",
+      "Mint tea service",
+      "Airport transfer"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1542396601-dca920ea2807",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+    ],
+    "affiliateUrl": "https://klook.tpm.lv/upXwWEwX",
+    "shortDescription": "Bohemian-chic riads in Marrakech medina with hammam rituals and rooftop breakfasts.",
+    "description": "Medina Riad Collection gathers Tripolio-approved riads steps from Jemaa el-Fnaa. Expect hand-tiled courtyards, hammam spa rituals, and photographer-led souk tours."
+  },
+  {
+    "id": "agafay-desert-lodge",
+    "name": "Agafay Desert Lodge",
+    "price": "$210/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Agafay Desert",
+      "country": "Morocco",
+      "latitude": 31.4202,
+      "longitude": -8.1347
+    },
+    "amenities": [
+      "Desert glamping",
+      "Camel trek",
+      "Stargazing",
+      "Infinity pool",
+      "Private dinner",
+      "Yoga deck"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+    ],
+    "affiliateUrl": "https://klook.tpm.lv/upXwWEwX",
+    "shortDescription": "Luxury canvas lodges in the Agafay Desert with sunsets, infinity pools, and chef-driven dining.",
+    "description": "Agafay Desert Lodge delivers glamping domes with 360\u00b0 horizon views. Tripolio travelers enjoy private camel treks, astrology sessions, and infinity-pool afternoons."
+  },
+  {
+    "id": "essaouira-coast-houses",
+    "name": "Essaouira Coast Houses",
+    "price": "$165/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Essaouira",
+      "country": "Morocco",
+      "latitude": 31.5085,
+      "longitude": -9.7595
+    },
+    "amenities": [
+      "Ocean terrace",
+      "Surf lessons",
+      "Artist studio",
+      "Seafood dinners",
+      "Co-working lounge",
+      "Bike rentals"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1543852786-1cf6624b9987",
+      "https://images.unsplash.com/photo-1543852786-1cf6624b9987",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+    ],
+    "affiliateUrl": "https://klook.tpm.lv/upXwWEwX",
+    "shortDescription": "Design-forward coastal homes in Essaouira with surf lessons, seafood dinners, and co-working nooks.",
+    "description": "Essaouira Coast Houses capture Atlantic breezes and creative energy. Tripolio guests get surf coaching, medina art walks, and communal seafood feasts."
   }
 ]
