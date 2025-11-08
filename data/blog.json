@@ -1,30 +1,56 @@
 [
   {
+    "slug": "mindful-bali-boutique-stays-2025",
+    "title": "Tripolio's Guide to Mindful Boutique Stays in Bali (2025 Edition)",
+    "excerpt": "Surf sunrise, slip into jungle wellness, and book design-led Balinese stays aligned with Tripolio’s mindful travel standards.",
+    "publishedAt": "2025-11-08",
+    "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    "category": "City Guides",
+    "tags": ["Bali", "Mindful Travel", "Asia"]
+  },
+  {
+    "slug": "tripolio-map-3-day-urban-escape",
+    "title": "How to Use Tripolio’s Map to Plan a 3-Day Urban Escape",
+    "excerpt": "Turn Tripolio’s interactive map into your co-pilot for quick city breaks, with filters, pins, and itinerary layers.",
+    "publishedAt": "2025-11-08",
+    "coverImage": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+    "category": "Planning Tips",
+    "tags": ["Tripolio Map", "Weekend", "Product Guide"]
+  },
+  {
     "slug": "2025-european-city-stays",
     "title": "10 Design-Led European City Stays to Bookmark for 2025",
-    "excerpt": "Discover boutique hotels and apartments across Lisbon, Copenhagen, Paris, and more\u2014each chosen for mindful design, neighborhood culture, and seamless booking via Tripolio partners.",
+    "excerpt": "Discover boutique hotels and apartments across Lisbon, Copenhagen, Paris, and more—each chosen for mindful design, neighborhood culture, and seamless booking via Tripolio partners.",
     "publishedAt": "2025-11-07",
-    "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+    "category": "City Guides",
+    "tags": ["Europe", "Design Hotels", "Itineraries"]
   },
   {
     "slug": "5-ways-to-elevate-weekend-getaway",
     "title": "5 Ways to Elevate Your Weekend Getaway",
     "excerpt": "Micro escapes deserve macro planning. Here's how Tripolio curates short trips with big impact.",
     "publishedAt": "2025-03-20",
-    "coverImage": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    "coverImage": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+    "category": "Planning Tips",
+    "tags": ["Weekend", "Checklists", "Tripolio App"]
   },
   {
     "slug": "conscious-travel-playbook",
     "title": "Tripolio's Conscious Travel Playbook",
     "excerpt": "Level-up your travel footprint with eco-certified stays, local impact experiences, and Tripolio's mindful packing checklist.",
     "publishedAt": "2025-02-08",
-    "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    "coverImage": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+    "category": "Mindful Travel",
+    "tags": ["Sustainability", "Mindful Travel", "Guides"]
   },
   {
     "slug": "design-led-stays-2025",
     "title": "Design-Led Stays to Bookmark for 2025",
     "excerpt": "From cliffside domes to city sanctuaries, here are the design-forward stays inspiring our Tripolio community this year.",
     "publishedAt": "2025-01-12",
-    "coverImage": "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+    "coverImage": "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+    "category": "City Guides",
+    "tags": ["Design Hotels", "Inspiration"]
   }
 ]

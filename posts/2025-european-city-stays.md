@@ -4,6 +4,11 @@ title: "10 Design-Led European City Stays to Bookmark for 2025"
 excerpt: "Discover boutique hotels and apartments across Lisbon, Copenhagen, Paris, and more—each chosen for mindful design, neighborhood culture, and seamless booking via Tripolio partners."
 date: "2025-11-07"
 coverImage: "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+category: "City Guides"
+tags:
+  - Europe
+  - Design Hotels
+  - Itineraries
 ---
 
 ## Why 2025 is the year to upgrade your Euro city stay list

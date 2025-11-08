@@ -22,6 +22,9 @@ export interface BlogPost {
   excerpt: string;
   publishedAt: string;
   coverImage: string;
+  category?: string;
+  tags?: string[];
+  content?: string;
 }
 
 export interface NearbyPlace {
