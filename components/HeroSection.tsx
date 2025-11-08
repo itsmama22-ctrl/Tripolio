@@ -31,8 +31,11 @@ export default function HeroSection({ onSearchSubmit }: HeroSectionProps) {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <Link href="/download" className="button-primary inline-flex items-center gap-2">
-              Download the iOS App
+            <Link
+              href="/list"
+              className="button-primary inline-flex items-center gap-2"
+            >
+              Browse stays
               <HiOutlineArrowNarrowRight className="h-5 w-5" />
             </Link>
             <Link
@@ -60,7 +63,7 @@ export default function HeroSection({ onSearchSubmit }: HeroSectionProps) {
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-700">
               <HiOutlineStar className="h-5 w-5 text-accent" />
-              Rated 4.9/5 by mindful travelers
+              Trusted by mindful travelers worldwide
             </div>
             <div className="rounded-full bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-primary shadow-card">
               Weekly drops · Verified editors
