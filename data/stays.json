@@ -10,7 +10,13 @@
       "latitude": 38.7223,
       "longitude": -9.1393
     },
-    "amenities": ["Rooftop pool", "Local breakfast", "Ocean view suites", "Co-working lounge", "Airport transfer"],
+    "amenities": [
+      "Rooftop pool",
+      "Local breakfast",
+      "Ocean view suites",
+      "Co-working lounge",
+      "Airport transfer"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
@@ -18,7 +24,7 @@
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
     ],
     "affiliateUrl": "https://www.booking.com/",
-    "shortDescription": "Design-first stay in Lisbon’s creative quarter with sweeping rooftop views and curated city guides.",
+    "shortDescription": "Design-first stay in Lisbon\u2019s creative quarter with sweeping rooftop views and curated city guides.",
     "description": "Azure Haven Boutique Hotel offers a calm oasis among Lisbon's buzzing Bairro Alto district. Inspired by coastal hues and mid-century touches, each suite includes Dyson amenities and a personalized Tripolio city itinerary."
   },
   {
@@ -32,7 +38,13 @@
       "latitude": 34.8697,
       "longitude": -111.761
     },
-    "amenities": ["Solar powered", "Private hot tubs", "Guided hikes", "Stargazing deck", "Vegan tasting menu"],
+    "amenities": [
+      "Solar powered",
+      "Private hot tubs",
+      "Guided hikes",
+      "Stargazing deck",
+      "Vegan tasting menu"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
       "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
@@ -54,7 +66,13 @@
       "latitude": 64.1466,
       "longitude": -21.9426
     },
-    "amenities": ["Geothermal spa", "Glass roof bedrooms", "Arctic breakfast", "Sauna", "Guided aurora tours"],
+    "amenities": [
+      "Geothermal spa",
+      "Glass roof bedrooms",
+      "Arctic breakfast",
+      "Sauna",
+      "Guided aurora tours"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
@@ -63,7 +81,7 @@
     ],
     "affiliateUrl": "https://www.airbnb.com/",
     "shortDescription": "Minimalist A-frame cabins with Nordic spa access and front-row aurora shows.",
-    "description": "Escape to geothermal-heated cabins framed by Iceland’s dramatic landscapes. Each stay includes access to an on-site sauna, private aurora alert system, and chef-led Arctic dining experiences."
+    "description": "Escape to geothermal-heated cabins framed by Iceland\u2019s dramatic landscapes. Each stay includes access to an on-site sauna, private aurora alert system, and chef-led Arctic dining experiences."
   },
   {
     "id": "urban-oasis",
@@ -76,7 +94,13 @@
       "latitude": 35.6762,
       "longitude": 139.6503
     },
-    "amenities": ["Smart check-in", "Tea bar", "City bikes", "Onsen access", "Soundproof rooms"],
+    "amenities": [
+      "Smart check-in",
+      "Tea bar",
+      "City bikes",
+      "Onsen access",
+      "Soundproof rooms"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
@@ -85,7 +109,7 @@
     ],
     "affiliateUrl": "https://www.booking.com/",
     "shortDescription": "Serene loft suites in Shibuya, designed for travelers who balance adventure and mindfulness.",
-    "description": "Urban Oasis Loft Suites merge Japanese minimalism with smart hospitality. Guests enjoy guided tea ceremonies, co-working lounges, and curated itineraries through Tripolio’s city experts."
+    "description": "Urban Oasis Loft Suites merge Japanese minimalism with smart hospitality. Guests enjoy guided tea ceremonies, co-working lounges, and curated itineraries through Tripolio\u2019s city experts."
   },
   {
     "id": "vineyard-villa",
@@ -98,7 +122,13 @@
       "latitude": 43.7711,
       "longitude": 11.2486
     },
-    "amenities": ["Infinity pool", "Wine tastings", "Olive grove picnics", "Chef's table", "Wellness studio"],
+    "amenities": [
+      "Infinity pool",
+      "Wine tastings",
+      "Olive grove picnics",
+      "Chef's table",
+      "Wellness studio"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
@@ -120,7 +150,13 @@
       "latitude": -28.6474,
       "longitude": 153.602
     },
-    "amenities": ["Surf lessons", "Sunrise yoga", "Community dinners", "Creative studio", "Board rentals"],
+    "amenities": [
+      "Surf lessons",
+      "Sunrise yoga",
+      "Community dinners",
+      "Creative studio",
+      "Board rentals"
+    ],
     "photos": [
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
@@ -129,6 +165,151 @@
     ],
     "affiliateUrl": "https://www.airbnb.com/",
     "shortDescription": "Slow-travel surf house with community vibes, creative workshops, and oceanfront suites.",
-    "description": "Coastal Collective Surf House is designed for travelers who crave intentional community. Wake up steps from Byron Bay’s best breaks, with daily programming curated by Tripolio beach hosts."
+    "description": "Coastal Collective Surf House is designed for travelers who crave intentional community. Wake up steps from Byron Bay\u2019s best breaks, with daily programming curated by Tripolio beach hosts."
+  },
+  {
+    "id": "skyline-retreat",
+    "name": "Skyline Retreat Residences",
+    "price": "$285/night",
+    "rating": 4.7,
+    "location": {
+      "city": "New York",
+      "country": "USA",
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "amenities": [
+      "Rooftop lounge",
+      "In-room Peloton",
+      "Chef's tasting",
+      "Personal concierge",
+      "High-speed Wi-Fi",
+      "Wellness studio"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Glass-clad suites hovering above Manhattan with Tripolio concierge perks.",
+    "description": "Skyline Retreat Residences offers expansive city views, private Peloton rooms, and chef-led dining experiences. Guests can sync Tripolio itineraries with in-room tablets for effortless city exploration."
+  },
+  {
+    "id": "alpine-haven",
+    "name": "Alpine Haven Chalet",
+    "price": "$320/night",
+    "rating": 4.9,
+    "location": {
+      "city": "Zermatt",
+      "country": "Switzerland",
+      "latitude": 46.0207,
+      "longitude": 7.7491
+    },
+    "amenities": [
+      "Private funicular",
+      "Ski-in/ski-out",
+      "Fireplace lounge",
+      "Spa hammam",
+      "Glacier hikes",
+      "Sommelier cellar"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Matterhorn-facing chalet with private funicular and Tripolio-guided glacier experiences.",
+    "description": "Alpine Haven Chalet wraps modern alpine design with concierge-led adventures. Book via Tripolio to unlock guided glacier hikes, sommelier tastings, and late checkout for red-eye departures."
+  },
+  {
+    "id": "desert-horizon",
+    "name": "Desert Horizon Camp",
+    "price": "$260/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Wadi Rum",
+      "country": "Jordan",
+      "latitude": 29.5328,
+      "longitude": 35.4225
+    },
+    "amenities": [
+      "Stargazing observatory",
+      "Bedouin dinners",
+      "Hot air ballooning",
+      "Desert spa",
+      "Camel caravans",
+      "Sustainable water systems"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Luxury desert domes with Bedouin-led adventures and Tripolio sustainability notes.",
+    "description": "Desert Horizon Camp combines lunar-like landscapes with mindful hospitality. Guests booking via Tripolio receive curated sunrise balloon rides and a stargazing guide crafted by local astronomers."
+  },
+  {
+    "id": "rainforest-cascade",
+    "name": "Rainforest Cascade Villas",
+    "price": "$295/night",
+    "rating": 4.8,
+    "location": {
+      "city": "Costa Rica",
+      "country": "Costa Rica",
+      "latitude": 9.7489,
+      "longitude": -83.7534
+    },
+    "amenities": [
+      "Waterfall plunge pools",
+      "Canopy zipline",
+      "Farm-to-table dining",
+      "On-site naturalist",
+      "Wellness pavilion",
+      "Coffee tastings"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Waterfall-fed villas deep in the rainforest with naturalist-led excursions.",
+    "description": "Rainforest Cascade Villas immerses guests in biodiverse jungle living. Tripolio travellers receive complimentary coffee farm tours, waterfall yoga, and bespoke wildlife itineraries."
+  },
+  {
+    "id": "mediterranean-loft",
+    "name": "Mediterranean Loft Collection",
+    "price": "$210/night",
+    "rating": 4.3,
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain",
+      "latitude": 41.3851,
+      "longitude": 2.1734
+    },
+    "amenities": [
+      "Rooftop plunge",
+      "Tapas workshops",
+      "Design showroom",
+      "Bike concierge",
+      "Smart home tech",
+      "Late check-out"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Design lofts in El Born with Tripolio-curated tapas nights and design tours.",
+    "description": "Mediterranean Loft Collection blends Catalan design heritage with connected hospitality. Book via Tripolio for guided architecture walks, bike concierge service, and exclusive tapas workshops."
   }
 ]
