@@ -1,10 +1,13 @@
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { HiOutlineSearch, HiOutlineLocationMarker } from "react-icons/hi";
 import clsx from "clsx";
 
 interface SearchBarProps {
   onSubmit?: (query: { term: string; location: string; filter: string }) => void;
   variant?: "inline" | "stacked";
+  initialTerm?: string;
+  initialLocation?: string;
+  initialFilter?: string;
 }
 
 const filters = [
@@ -13,10 +16,30 @@ const filters = [
   { label: "Near Me", value: "near-me" },
 ];
 
-export default function SearchBar({ onSubmit, variant = "inline" }: SearchBarProps) {
-  const [term, setTerm] = useState("");
-  const [location, setLocation] = useState("");
-  const [filter, setFilter] = useState(filters[0].value);
+export default function SearchBar({
+  onSubmit,
+  variant = "inline",
+  initialTerm = "",
+  initialLocation = "",
+  initialFilter = filters[0].value,
+}: SearchBarProps) {
+  const [term, setTerm] = useState(initialTerm);
+  const [location, setLocation] = useState(initialLocation);
+  const [filter, setFilter] = useState(initialFilter);
+
+  useEffect(() => {
+    setTerm(initialTerm);
+  }, [initialTerm]);
+
+  useEffect(() => {
+    setLocation(initialLocation);
+  }, [initialLocation]);
+
+  useEffect(() => {
+    if (initialFilter) {
+      setFilter(initialFilter);
+    }
+  }, [initialFilter]);
 
   const layoutClass = useMemo(
     () =>
@@ -35,7 +58,7 @@ export default function SearchBar({ onSubmit, variant = "inline" }: SearchBarPro
   };
 
   return (
-    <form onSubmit={handleSubmit} className={layoutClass}>
+    <form onSubmit={handleSubmit} className={layoutClass} role="search">
       <div className="flex flex-1 items-center gap-3 rounded-2xl bg-slate-100 px-4 py-3">
         <HiOutlineSearch className="h-5 w-5 text-primary" aria-hidden="true" />
         <input
@@ -61,7 +84,7 @@ export default function SearchBar({ onSubmit, variant = "inline" }: SearchBarPro
       <div className="mt-3 md:col-span-3 md:mt-4">
         <div
           className="flex gap-2 overflow-x-auto rounded-full bg-slate-100/60 p-1"
-          role="group"
+          role="radiogroup"
           aria-label="Filters"
         >
           {filters.map((item) => (

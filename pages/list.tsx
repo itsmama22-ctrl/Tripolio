@@ -10,13 +10,17 @@ export default function ListPage() {
   const router = useRouter();
   const { term = "", location = "", filter = "" } = router.query;
 
+  const termValue = Array.isArray(term) ? term[0] : term;
+  const locationValue = Array.isArray(location) ? location[0] : location;
+  const filterValue = Array.isArray(filter) ? filter[0] : filter;
+
   const filtered = useMemo(() => {
     return filterStays({
-      term: Array.isArray(term) ? term[0] : term,
-      location: Array.isArray(location) ? location[0] : location,
-      filter: Array.isArray(filter) ? filter[0] : filter,
+      term: termValue,
+      location: locationValue,
+      filter: filterValue,
     });
-  }, [term, location, filter]);
+  }, [termValue, locationValue, filterValue]);
 
   const handleSearch = (query: { term: string; location: string; filter: string }) => {
     const params = new URLSearchParams();
@@ -25,6 +29,8 @@ export default function ListPage() {
     if (query.filter) params.append("filter", query.filter);
     router.push(`/list?${params.toString()}`);
   };
+
+  const initialFilter = filterValue || "hotels";
 
   return (
     <Layout>
@@ -43,7 +49,12 @@ export default function ListPage() {
               Filter Tripolio stays by location, vibe, or partner. Each listing includes affiliate booking options.
             </p>
           </div>
-          <SearchBar onSubmit={handleSearch} />
+          <SearchBar
+            onSubmit={handleSearch}
+            initialTerm={termValue}
+            initialLocation={locationValue}
+            initialFilter={initialFilter}
+          />
         </div>
         <div className="mt-10 grid gap-8">
           {filtered.length ? (
