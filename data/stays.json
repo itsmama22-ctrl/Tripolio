@@ -630,5 +630,237 @@
     "affiliateUrl": "https://www.expedia.com/",
     "shortDescription": "Skyline suites atop Downtown Dubai with Tripolio-curated desert and design tours.",
     "description": "Dubai Skyline Residences elevate luxury stays with curated desert safaris, souk personal shoppers, and in-house art tours orchestrated by Tripolio hosts."
+  },
+  {
+    "id": "kyoto-family-ryokan",
+    "name": "Kyoto Family Ryokan",
+    "price": "$165/night",
+    "rating": 4.7,
+    "location": {
+      "city": "Kyoto",
+      "country": "Japan",
+      "latitude": 35.0116,
+      "longitude": 135.7681
+    },
+    "amenities": [
+      "Tatami suites",
+      "Onsen access",
+      "Kid bento",
+      "Cultural workshops",
+      "Bike rentals",
+      "Tea ceremonies"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Family-friendly ryokan near Higashiyama with Tripolio-hosted cultural workshops.",
+    "description": "Kyoto Family Ryokan blends tatami serenity with thoughtful amenities for multi-generational travel. Tripolio guests enjoy guided temple walks, tea ceremonies, and bike adventures tailored for families."
+  },
+  {
+    "id": "lisbon-creative-studio",
+    "name": "Lisbon Creative Studio Flats",
+    "price": "$145/night",
+    "rating": 4.4,
+    "location": {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "latitude": 38.7223,
+      "longitude": -9.1393
+    },
+    "amenities": [
+      "Self check-in",
+      "Cowork lounge",
+      "Local art",
+      "Smart kitchen",
+      "Tram passes",
+      "Rooftop deck"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Budget-savvy design studios in Alfama with Tripolio cowork credits and tram perks.",
+    "description": "Lisbon Creative Studio Flats cater to digital nomads and weekend explorers. Book via Tripolio for coworking passes, curated art walks, and ready-to-use smart kitchens."
+  },
+  {
+    "id": "mexico-city-art-lofts",
+    "name": "Mexico City Art Lofts",
+    "price": "$175/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "latitude": 19.4326,
+      "longitude": -99.1332
+    },
+    "amenities": [
+      "Gallery residencies",
+      "Rooftop cinema",
+      "Chef pop-ups",
+      "Mezcal tastings",
+      "Kids creative lab",
+      "Airport transfers"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Roma Norte lofts celebrating art, food, and family-friendly workshops.",
+    "description": "Mexico City Art Lofts offer cinematic rooftops and curated culinary labs. Tripolio travellers unlock mezcal tastings, kids\u2019 mural sessions, and private gallery tours."
+  },
+  {
+    "id": "dubrovnik-coast-cabana",
+    "name": "Dubrovnik Coast Cabana",
+    "price": "$130/night",
+    "rating": 4.3,
+    "location": {
+      "city": "Dubrovnik",
+      "country": "Croatia",
+      "latitude": 42.6507,
+      "longitude": 18.0944
+    },
+    "amenities": [
+      "Sea kayaks",
+      "Family suites",
+      "Mediterranean breakfasts",
+      "Boat shuttles",
+      "Old town tours",
+      "Kids splash pool"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Adriatic cabanas with Tripolio-provisioned kayaks and historic walking tours.",
+    "description": "Dubrovnik Coast Cabana pairs breezy suites with Mediterranean cuisine. Tripolio bookings include boat shuttles to hidden coves and storyteller-led tours in the Old Town."
+  },
+  {
+    "id": "capetown-urban-backpack",
+    "name": "Cape Town Urban Backpack Suites",
+    "price": "$95/night",
+    "rating": 4.2,
+    "location": {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "latitude": -33.9249,
+      "longitude": 18.4241
+    },
+    "amenities": [
+      "Shared cowork",
+      "Adventure desk",
+      "Community dinners",
+      "Roof braai",
+      "Budget safaris",
+      "Laundry bar"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.hostelworld.com/",
+    "shortDescription": "Design-led hostel suites with Tripolio adventure concierge and rooftop braais.",
+    "description": "Cape Town Urban Backpack Suites prove budget can be beautiful. Tripolio travellers receive discounted adventure bundles and curated township art tours."
+  },
+  {
+    "id": "paris-family-folie",
+    "name": "Paris Family Folie",
+    "price": "$235/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "amenities": [
+      "Connected suites",
+      "Stroller concierge",
+      "Storytime salon",
+      "River picnics",
+      "Kitchenette",
+      "Babysitting"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Charming Parisian apartments tailored for families with Tripolio picnic kits.",
+    "description": "Paris Family Folie sits steps from Canal Saint-Martin, offering stroller services, bilingual babysitters, and Tripolio-provided picnic sets for Seine-side afternoons."
+  },
+  {
+    "id": "lagos-eco-residences",
+    "name": "Lagos Eco Residences",
+    "price": "$155/night",
+    "rating": 4.4,
+    "location": {
+      "city": "Lagos",
+      "country": "Nigeria",
+      "latitude": 6.5244,
+      "longitude": 3.3792
+    },
+    "amenities": [
+      "Solar suites",
+      "Creative hub",
+      "Afrobeats nights",
+      "Wellness deck",
+      "Family pools",
+      "Chef's market"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Eco-smart Lagos residences with Tripolio creative labs and Afrobeats nights.",
+    "description": "Lagos Eco Residences celebrate West African design with solar-powered suites and community programming. Guests get Tripolio-curated Afrobeats soir\u00e9es and market tours."
+  },
+  {
+    "id": "vancouver-harbour-huts",
+    "name": "Vancouver Harbour Huts",
+    "price": "$180/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Vancouver",
+      "country": "Canada",
+      "latitude": 49.2827,
+      "longitude": -123.1207
+    },
+    "amenities": [
+      "Floating cabins",
+      "Kayak launch",
+      "Seaplane tours",
+      "Organic pantry",
+      "Firepit nights",
+      "Family board games"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Harbourfront floating cabins with Tripolio kayak tours and seaplane add-ons.",
+    "description": "Vancouver Harbour Huts put you on the water with eco-minded floating cabins. Tripolio itineraries pair kayak explorations with seaplane trips over the Pacific North Coast."
   }
 ]
