@@ -45,39 +45,40 @@ export default function HomePage({ featured, guides }: HomeProps) {
       </Head>
       <HeroSection onSearchSubmit={handleSearch} />
       {heroGuide && (
-        <section className="section mt-16 grid gap-8 rounded-[32px] bg-gradient-to-br from-primary/10 via-white to-beige p-8 shadow-card md:grid-cols-[1.2fr,0.8fr]">
-          <div className="flex flex-col justify-center gap-6">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-primary">
-              Editors' picks
-            </span>
-            <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">{heroGuide.title}</h2>
-            <p className="text-sm text-slate-600 md:text-base">{heroGuide.excerpt}</p>
-            <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500">
-              <span>
-                {new Date(heroGuide.publishedAt).toLocaleDateString(undefined, {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </span>
-              <span>{heroGuide.category}</span>
-              <Link href={`/blog/${heroGuide.slug}`} className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent">
-                Read the guide
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-4">
+        <section className="section mt-16 grid gap-6 md:grid-cols-[1.4fr,0.9fr]">
+          <article className="relative overflow-hidden rounded-[32px] bg-slate-900 text-white shadow-card">
             <div
-              className="h-48 rounded-[28px] bg-cover bg-center"
+              className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${heroGuide.coverImage})` }}
             />
-            {otherGuides.length > 0 && (
-              <div className="grid gap-4 md:grid-cols-2">
-                {otherGuides.map((post) => (
-                  <GuideCard key={post.slug} post={post} />
-                ))}
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-900/40 to-slate-900/10" />
+            <div className="relative flex h-full flex-col justify-end gap-6 p-10">
+              <div className="space-y-4">
+                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white/90">
+                  Editors' picks
+                </span>
+                <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">{heroGuide.title}</h2>
+                <p className="max-w-xl text-sm text-white/80 md:text-base">{heroGuide.excerpt}</p>
               </div>
-            )}
+              <div className="flex flex-wrap items-center gap-4 text-xs text-white/70">
+                <span>
+                  {new Date(heroGuide.publishedAt).toLocaleDateString(undefined, {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+                <span>{heroGuide.category}</span>
+                <Link href={`/blog/${heroGuide.slug}`} className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent">
+                  Read the guide
+                </Link>
+              </div>
+            </div>
+          </article>
+          <div className="grid gap-4 md:grid-rows-3">
+            {otherGuides.map((post) => (
+              <GuideCard key={post.slug} post={post} />
+            ))}
           </div>
         </section>
       )}
