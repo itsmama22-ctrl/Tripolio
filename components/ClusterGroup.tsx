@@ -2,23 +2,22 @@ import { ReactNode } from "react";
 import { createElementObject, extendContext, createPathComponent } from "@react-leaflet/core";
 import type { LeafletContextInterface } from "@react-leaflet/core";
 import L from "leaflet";
-import type { MarkerClusterGroupOptions } from "leaflet.markercluster";
 import "leaflet.markercluster";
 
 type ClusterEvents = {
   [event: string]: (...args: unknown[]) => void;
 };
 
-type ClusterGroupProps = MarkerClusterGroupOptions & {
+type ClusterGroupProps = L.MarkerClusterGroupOptions & {
   children?: ReactNode;
   [key: string]: unknown;
 };
 
 function splitProps(props: ClusterGroupProps): {
-  clusterProps: MarkerClusterGroupOptions;
+  clusterProps: L.MarkerClusterGroupOptions;
   clusterEvents: ClusterEvents;
 } {
-  const clusterProps: MarkerClusterGroupOptions = {};
+  const clusterProps: L.MarkerClusterGroupOptions = {};
   const clusterEvents: ClusterEvents = {};
 
   Object.entries(props).forEach(([name, value]) => {
