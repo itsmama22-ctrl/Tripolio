@@ -96,6 +96,33 @@ export default function ContactPage() {
           </p>
         </form>
       </section>
+      <section className="section-narrow mt-16">
+        <div className="rounded-3xl bg-white p-8 shadow-card">
+          <h2 className="text-xl font-semibold text-slate-900">Contact FAQs</h2>
+          <p className="mt-2 text-sm text-slate-600">Quick answers while our team works on your request.</p>
+          <div className="mt-6 space-y-4">
+            {[
+              {
+                question: "How fast do you reply?",
+                answer: "Partnership and press requests receive responses within two business days. Support questions are answered within 24 hours whenever possible.",
+              },
+              {
+                question: "Can I submit a stay for consideration?",
+                answer: "Yes—email us a link, a short blurb on why it fits Tripolio’s design ethos, and any affiliate details. We love community nominations.",
+              },
+              {
+                question: "Do you offer media kits or screenshots?",
+                answer: "Press kits and product screenshots are available on request. Mention the publication and deadline so we can prioritize the right assets.",
+              },
+            ].map((item) => (
+              <div key={item.question} className="rounded-2xl border border-slate-200 bg-slate-50/60 p-5">
+                <h3 className="text-sm font-semibold text-slate-900">{item.question}</h3>
+                <p className="mt-2 text-sm text-slate-600">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
