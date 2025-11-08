@@ -5,12 +5,10 @@ import { useRouter } from "next/router";
 import HeroSection from "../components/HeroSection";
 import { Layout } from "../components/Layout";
 import { StayCard } from "../components/StayCard";
-import { GuideCard } from "../components/GuideCard";
 import SearchBar from "../components/SearchBar";
 import { NewsletterSignup } from "../components/NewsletterSignup";
 import { filterStays } from "../lib/stays";
-import { getPosts } from "../lib/posts";
-import type { Stay, BlogPost } from "../types";
+import type { Stay } from "../types";
 
 const DynamicMap = dynamic(() => import("../components/MapView").then((mod) => mod.MapView), {
   ssr: false,
@@ -18,14 +16,10 @@ const DynamicMap = dynamic(() => import("../components/MapView").then((mod) => m
 
 interface HomeProps {
   featured: Stay[];
-  guides: BlogPost[];
 }
 
-export default function HomePage({ featured, guides }: HomeProps) {
+export default function HomePage({ featured }: HomeProps) {
   const router = useRouter();
-  const heroGuide = guides[0];
-  const otherGuides = guides.slice(1, 4);
-
   const handleSearch = (query: { term: string; location: string; filter: string }) => {
     const params = new URLSearchParams();
     if (query.term) params.append("term", query.term);
@@ -44,44 +38,6 @@ export default function HomePage({ featured, guides }: HomeProps) {
         />
       </Head>
       <HeroSection onSearchSubmit={handleSearch} />
-      {heroGuide && (
-        <section className="section mt-16 grid gap-6 md:grid-cols-[1.4fr,0.9fr]">
-          <article className="relative overflow-hidden rounded-[32px] bg-slate-900 text-white shadow-card">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${heroGuide.coverImage})` }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-900/40 to-slate-900/10" />
-            <div className="relative flex h-full flex-col justify-end gap-6 p-10">
-              <div className="space-y-4">
-                <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white/90">
-                  Editors' picks
-                </span>
-                <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">{heroGuide.title}</h2>
-                <p className="max-w-xl text-sm text-white/80 md:text-base">{heroGuide.excerpt}</p>
-              </div>
-              <div className="flex flex-wrap items-center gap-4 text-xs text-white/70">
-                <span>
-                  {new Date(heroGuide.publishedAt).toLocaleDateString(undefined, {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
-                <span>{heroGuide.category}</span>
-                <Link href={`/blog/${heroGuide.slug}`} className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent">
-                  Read the guide
-                </Link>
-              </div>
-            </div>
-          </article>
-          <div className="grid gap-4 md:grid-rows-3">
-            {otherGuides.map((post) => (
-              <GuideCard key={post.slug} post={post} />
-            ))}
-          </div>
-        </section>
-      )}
       <section className="section mt-16">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">Curated for this week</h2>
@@ -161,12 +117,10 @@ export default function HomePage({ featured, guides }: HomeProps) {
 
 export async function getStaticProps() {
   const featured = filterStays({}).slice(0, 6);
-  const guides = getPosts().slice(0, 4);
 
   return {
     props: {
       featured,
-      guides,
     },
   };
 }
