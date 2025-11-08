@@ -71,7 +71,7 @@ export default function StayDetailPage({ stay }: StayDetailProps) {
               <p className="text-sm text-slate-600">Tripolio partners with leading booking platforms. Commission helps keep the app free.</p>
             </div>
             <a
-              href={stay.affiliateUrl || DEFAULT_AFFILIATE_URL}
+              href={DEFAULT_AFFILIATE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="button-primary w-full"

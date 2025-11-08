@@ -35,7 +35,7 @@ export function StayCard({ stay, variant = "grid" }: StayCardProps) {
 
   const isList = variant === "list";
   const currentImage = imageError ? "/assets/stay-placeholder.svg" : photos[activePhoto];
-  const affiliateLink = stay.affiliateUrl || DEFAULT_AFFILIATE_URL;
+  const affiliateLink = DEFAULT_AFFILIATE_URL;
 
   return (
     <article
