@@ -30,7 +30,7 @@ export default function ListPage() {
     router.push(`/list?${params.toString()}`);
   };
 
-  const initialFilter = filterValue || "hotels";
+  const initialFilter = filterValue || "all";
 
   return (
     <Layout>

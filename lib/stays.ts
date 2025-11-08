@@ -36,6 +36,8 @@ export function filterStays({ term = "", location = "", filter }: StayFilter): S
         ? true
         : filter === "airbnb"
         ? stay.affiliateUrl.includes("airbnb")
+        : filter === "all"
+        ? true
         : stay.affiliateUrl.includes("booking") || stay.affiliateUrl.includes("expedia")
       : true;
 

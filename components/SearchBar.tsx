@@ -11,7 +11,7 @@ interface SearchBarProps {
 }
 
 const filters = [
-  { label: "Hotels", value: "hotels" },
+  { label: "All stays", value: "all" },
   { label: "Airbnb", value: "airbnb" },
   { label: "Near Me", value: "near-me" },
 ];
@@ -25,7 +25,7 @@ export default function SearchBar({
 }: SearchBarProps) {
   const [term, setTerm] = useState(initialTerm);
   const [location, setLocation] = useState(initialLocation);
-  const [filter, setFilter] = useState(initialFilter);
+  const [filter, setFilter] = useState(initialFilter ?? filters[0].value);
 
   useEffect(() => {
     setTerm(initialTerm);
@@ -38,6 +38,8 @@ export default function SearchBar({
   useEffect(() => {
     if (initialFilter) {
       setFilter(initialFilter);
+    } else {
+      setFilter(filters[0].value);
     }
   }, [initialFilter]);
 
