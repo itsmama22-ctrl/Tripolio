@@ -16,6 +16,8 @@ function buildImageUrl(url: string): string {
   return url.includes("?") ? `${url}&auto=format&fit=crop&w=1600&q=80` : `${url}?auto=format&fit=crop&w=1600&q=80`;
 }
 
+const DEFAULT_AFFILIATE_URL = "https://klook.tpm.lv/upXwWEwX";
+
 export function StayCard({ stay, variant = "grid" }: StayCardProps) {
   const [activePhoto, setActivePhoto] = useState(0);
   const [imageError, setImageError] = useState(false);
@@ -33,6 +35,7 @@ export function StayCard({ stay, variant = "grid" }: StayCardProps) {
 
   const isList = variant === "list";
   const currentImage = imageError ? "/assets/stay-placeholder.svg" : photos[activePhoto];
+  const affiliateLink = stay.affiliateUrl || DEFAULT_AFFILIATE_URL;
 
   return (
     <article
@@ -93,7 +96,7 @@ export function StayCard({ stay, variant = "grid" }: StayCardProps) {
             View details
           </Link>
           <a
-            href={stay.affiliateUrl}
+            href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer"
             className="button-primary w-full md:w-auto"
