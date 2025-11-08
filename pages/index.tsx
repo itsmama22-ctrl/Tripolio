@@ -37,7 +37,7 @@ export default function HomePage({ featured }: HomeProps) {
           content="Discover curated hotels, Airbnbs, and retreats across the globe with Tripolio. Compare stays, follow editorial guides, and book via trusted affiliate partners."
         />
       </Head>
-      <HeroSection onSearchSubmit={handleSearch} />
+      <HeroSection onSearchSubmit={handleSearch} spotlight={featured[0]} spotlightCount={featured.length} />
       <section className="section mt-16">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">Curated for this week</h2>

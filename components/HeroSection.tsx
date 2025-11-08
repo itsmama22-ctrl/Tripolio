@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { HiOutlineSparkles, HiOutlineArrowNarrowRight, HiOutlineStar, HiOutlineMap } from "react-icons/hi";
 import SearchBar from "./SearchBar";
+import type { Stay } from "../types";
 
 interface HeroSectionProps {
   onSearchSubmit?: (query: { term: string; location: string; filter: string }) => void;
+  spotlight?: Stay;
+  spotlightCount?: number;
 }
 
-export default function HeroSection({ onSearchSubmit }: HeroSectionProps) {
+export default function HeroSection({ onSearchSubmit, spotlight, spotlightCount }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-white to-beige py-20 sm:py-24">
       <div className="absolute inset-0 -z-10">
@@ -75,35 +78,53 @@ export default function HeroSection({ onSearchSubmit }: HeroSectionProps) {
           <div className="relative overflow-hidden rounded-[32px] bg-white/90 p-6 shadow-[0_25px_60px_-25px_rgba(47,128,237,0.35)] ring-1 ring-white/60 backdrop-blur">
             <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-slate-400">
               <span>Tripolio spotlight</span>
-              <span>Curated this week</span>
+              <span>Updated weekly</span>
             </div>
-            <div className="mt-6 rounded-3xl bg-gradient-to-br from-primary via-[#5C9FFF] to-accent p-6 text-white shadow-inner">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-white/70">City playlist</p>
-                  <h3 className="mt-1 text-2xl font-semibold">Weekend in Lisbon</h3>
+            <article className="mt-6 overflow-hidden rounded-3xl shadow-inner">
+              <div className="relative">
+                <div
+                  className="h-48 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${spotlight?.photos?.[0] ?? "/assets/stay-placeholder.svg"})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 px-6 pb-6 text-white">
+                  <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+                    {spotlight ? `${spotlight.location.city}, ${spotlight.location.country}` : "City playlist"}
+                  </span>
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-semibold">{spotlight?.name ?? "Weekend inspiration"}</h3>
+                    <p className="text-sm text-white/80">
+                      {spotlight?.shortDescription ?? "Handpicked experiences for design lovers and slow travelers."}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3 text-xs text-white/80">
+                    <span>{spotlight?.price ?? "Compare partner pricing"}</span>
+                    {spotlight?.rating ? <span>Avg. rating {spotlight.rating.toFixed(1)}</span> : null}
+                    {typeof spotlightCount === "number" && spotlightCount > 1 ? (
+                      <span>{spotlightCount} spotlight stays</span>
+                    ) : (
+                      <span>Verified editors</span>
+                    )}
+                  </div>
                 </div>
-                <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white/90">4 stays</span>
               </div>
-              <p className="mt-4 text-sm text-white/80">
-                Rooftop pools, ocean views, and tucked-away coffee corners—handpicked for design lovers and slow travelers.
-              </p>
-              <div className="mt-6 grid gap-4 text-xs sm:grid-cols-3">
-                {["Bairro Alto", "Chiado", "LX Factory"].map((label) => (
-                  <span
-                    key={label}
-                    className="rounded-full bg-white/15 px-3 py-2 text-center font-semibold text-white/90"
-                  >
+              <div className="grid gap-2 bg-gradient-to-br from-primary via-[#5C9FFF] to-accent px-6 py-5 text-xs font-semibold text-white sm:grid-cols-3">
+                {(spotlight?.amenities?.slice(0, 3) ?? ["Flexible rates", "Local hosts", "Partner perks"]).map((label) => (
+                  <span key={label} className="rounded-full bg-white/15 px-3 py-2 text-center">
                     {label}
                   </span>
                 ))}
               </div>
-              <div className="mt-6 flex flex-wrap items-center justify-between gap-3 text-xs text-white/80">
-                <span>From $245/night</span>
-                <span>Avg. rating 4.8</span>
-                <span>New drops every Friday</span>
-              </div>
-            </div>
+              {spotlight?.id && (
+                <Link
+                  href={`/stays/${spotlight.id}`}
+                  className="flex items-center justify-between rounded-b-3xl bg-white/95 px-6 py-4 text-sm font-semibold text-primary hover:text-accent"
+                >
+                  View stay details
+                  <HiOutlineArrowNarrowRight className="h-4 w-4" />
+                </Link>
+              )}
+            </article>
 
             <div className="mt-6 rounded-3xl bg-white px-5 py-6 shadow-card">
               <div className="mb-4 flex items-center justify-between text-sm font-semibold text-slate-800">
