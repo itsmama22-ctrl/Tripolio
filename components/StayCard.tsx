@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { HiOutlineStar, HiOutlineArrowNarrowRight } from "react-icons/hi";
 import type { Stay } from "../types";
 
@@ -9,17 +9,30 @@ interface StayCardProps {
   variant?: "grid" | "list";
 }
 
+function buildImageUrl(url: string): string {
+  if (!url) {
+    return "/assets/stay-placeholder.svg";
+  }
+  return url.includes("?") ? `${url}&auto=format&fit=crop&w=1600&q=80` : `${url}?auto=format&fit=crop&w=1600&q=80`;
+}
+
 export function StayCard({ stay, variant = "grid" }: StayCardProps) {
   const [activePhoto, setActivePhoto] = useState(0);
+  const [imageError, setImageError] = useState(false);
 
   const photos = useMemo(() => {
     if (!stay.photos || stay.photos.length === 0) {
       return ["/assets/stay-placeholder.svg"];
     }
-    return stay.photos.slice(0, 4);
+    return stay.photos.slice(0, 4).map(buildImageUrl);
   }, [stay.photos]);
 
+  useEffect(() => {
+    setImageError(false);
+  }, [activePhoto, photos]);
+
   const isList = variant === "list";
+  const currentImage = imageError ? "/assets/stay-placeholder.svg" : photos[activePhoto];
 
   return (
     <article
@@ -32,12 +45,13 @@ export function StayCard({ stay, variant = "grid" }: StayCardProps) {
       <div className={isList ? "md:w-1/2" : "w-full"}>
         <div className="relative aspect-[4/3] w-full">
           <Image
-            src={photos[activePhoto]}
+            src={currentImage}
             alt={stay.name}
             fill
             className="object-cover"
             sizes={isList ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 33vw"}
             priority={false}
+            onError={() => setImageError(true)}
           />
           {photos.length > 1 && (
             <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2 rounded-full bg-white/80 px-3 py-1 text-xs text-slate-700">
