@@ -311,5 +311,324 @@
     "affiliateUrl": "https://www.airbnb.com/",
     "shortDescription": "Design lofts in El Born with Tripolio-curated tapas nights and design tours.",
     "description": "Mediterranean Loft Collection blends Catalan design heritage with connected hospitality. Book via Tripolio for guided architecture walks, bike concierge service, and exclusive tapas workshops."
+  },
+  {
+    "id": "sahara-star-dunes",
+    "name": "Sahara Star Dunes Camp",
+    "price": "$240/night",
+    "rating": 4.5,
+    "location": {
+      "city": "Merzouga",
+      "country": "Morocco",
+      "latitude": 31.0994,
+      "longitude": -4.0127
+    },
+    "amenities": [
+      "Camel caravan",
+      "Nomad music",
+      "Desert spa",
+      "Private dune dining",
+      "Solar power",
+      "Star guide"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1548783307-f63adc7bcd66",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Berber-inspired desert camp with Tripolio-curated camel caravans and stargazing rituals.",
+    "description": "Sahara Star Dunes Camp combines Marrakesh design touches with Bedouin hospitality. Tripolio travellers unlock private dune dining, star maps, and sustainable desert wellness treatments."
+  },
+  {
+    "id": "andaman-horizon",
+    "name": "Andaman Horizon Overwater Villas",
+    "price": "$410/night",
+    "rating": 4.9,
+    "location": {
+      "city": "Phuket",
+      "country": "Thailand",
+      "latitude": 7.8804,
+      "longitude": 98.3923
+    },
+    "amenities": [
+      "Overwater hammock",
+      "Longtail cruises",
+      "Thai wellness",
+      "Floating breakfast",
+      "Coral conservation",
+      "Cooking lab"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Floating villas in the Andaman Sea with Tripolio coral conservation programming.",
+    "description": "Andaman Horizon pairs teak craftsmanship with regenerative marine tourism. Book via Tripolio to access reef restoration dives, private longtail cruises, and Thai culinary labs."
+  },
+  {
+    "id": "andes-summit-lodge",
+    "name": "Andes Summit Lodge",
+    "price": "$260/night",
+    "rating": 4.7,
+    "location": {
+      "city": "Cusco",
+      "country": "Peru",
+      "latitude": -13.5319,
+      "longitude": -71.9675
+    },
+    "amenities": [
+      "Altitude lounge",
+      "Quechua cooking",
+      "Sacred valley tours",
+      "Adventure lab",
+      "Wellness sauna",
+      "Train coordination"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "High-altitude lodge with Tripolio-designed Sacred Valley routes and culinary labs.",
+    "description": "Andes Summit Lodge fuses modern minimalism with Andean rituals. Tripolio itineraries include curated weaving villages, highland gastronomy, and priority Machu Picchu access."
+  },
+  {
+    "id": "cape-winelands-manor",
+    "name": "Cape Winelands Manor",
+    "price": "$280/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Stellenbosch",
+      "country": "South Africa",
+      "latitude": -33.9346,
+      "longitude": 18.8668
+    },
+    "amenities": [
+      "Wine safaris",
+      "Private braai",
+      "Art studio",
+      "Bike vineyards",
+      "Infinity pool",
+      "Cape Dutch suites"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Cape Dutch manor with Tripolio-hosted wine safaris and artist residencies.",
+    "description": "Cape Winelands Manor links modern tasting lounges with heritage vineyards. Tripolio guests receive private cellar tours, art studio access, and chef-led braai evenings."
+  },
+  {
+    "id": "island-sky-pod",
+    "name": "Island Sky Pod Suites",
+    "price": "$350/night",
+    "rating": 4.8,
+    "location": {
+      "city": "Queenstown",
+      "country": "New Zealand",
+      "latitude": -45.0312,
+      "longitude": 168.6626
+    },
+    "amenities": [
+      "Skyline gondola",
+      "Adventure concierge",
+      "Outdoor hot tubs",
+      "Stargazing decks",
+      "Heli picnics",
+      "Wine tours"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Panoramic pods overlooking Lake Wakatipu with Tripolio adventure concierge.",
+    "description": "Island Sky Pod Suites deliver alpine luxury with cinematic views. Tripolio-curated heli picnics, wine journeys, and stargazing sessions make this a bucket-list stay."
+  },
+  {
+    "id": "city-lab-lofts",
+    "name": "City Lab Lofts",
+    "price": "$230/night",
+    "rating": 4.4,
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "latitude": 37.5665,
+      "longitude": 126.978
+    },
+    "amenities": [
+      "Smart mirrors",
+      "K-culture concierge",
+      "Tea atelier",
+      "Night market guide",
+      "Photo studio",
+      "Cloud co-working"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Futuristic lofts in Hongdae with Tripolio-led K-culture experiences.",
+    "description": "City Lab Lofts merges Seoul\u2019s tech-savvy design with cultural deep dives. Unlock Tripolio\u2019s K-pop studio sessions, market tastings, and photo ateliers with each booking."
+  },
+  {
+    "id": "baltic-art-house",
+    "name": "Baltic Art House",
+    "price": "$210/night",
+    "rating": 4.3,
+    "location": {
+      "city": "Tallinn",
+      "country": "Estonia",
+      "latitude": 59.437,
+      "longitude": 24.7536
+    },
+    "amenities": [
+      "Artist residencies",
+      "Sauna suite",
+      "Old town walks",
+      "Digital detox",
+      "Gallery tours",
+      "Nordic brunch"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+    ],
+    "affiliateUrl": "https://www.airbnb.com/",
+    "shortDescription": "Creative house near Tallinn\u2019s medieval core with Tripolio artist-led programming.",
+    "description": "Baltic Art House is part gallery, part slow-stay hub. Tripolio travellers get access to sauna rituals, art walks, and digital detox lounges curated by local creatives."
+  },
+  {
+    "id": "sydney-harbour-haven",
+    "name": "Sydney Harbour Haven",
+    "price": "$275/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "latitude": -33.8688,
+      "longitude": 151.2093
+    },
+    "amenities": [
+      "Opera view deck",
+      "Harbour kayaking",
+      "Chef's seafood bar",
+      "Sunrise yoga",
+      "City bikes",
+      "Gallery passes"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Circular Quay suites with Tripolio harbour adventures and culinary drops.",
+    "description": "Sydney Harbour Haven overlooks the Opera House and bridges. Tripolio bookings unlock dawn kayak tours, chef-led oyster tastings, and curated gallery circuits."
+  },
+  {
+    "id": "arctic-aurora-dome",
+    "name": "Arctic Aurora Dome",
+    "price": "$330/night",
+    "rating": 4.8,
+    "location": {
+      "city": "Rovaniemi",
+      "country": "Finland",
+      "latitude": 66.5039,
+      "longitude": 25.7294
+    },
+    "amenities": [
+      "Glass igloos",
+      "Aurora alert",
+      "Reindeer safaris",
+      "Ice dining",
+      "Sauna rituals",
+      "Snowshoe trails"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
+      "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Glass igloos under the Aurora with Tripolio-guided Arctic experiences.",
+    "description": "Arctic Aurora Dome elevates Lapland stays with designer igloos and cultural immersion. Tripolio travelers receive reindeer safaris, ice dining experiences, and sauna rituals tailored to your itinerary."
+  },
+  {
+    "id": "santorini-sunset-collective",
+    "name": "Santorini Sunset Collective",
+    "price": "$305/night",
+    "rating": 4.7,
+    "location": {
+      "city": "Oia",
+      "country": "Greece",
+      "latitude": 36.4617,
+      "longitude": 25.3753
+    },
+    "amenities": [
+      "Caldera pools",
+      "Sunset lounge",
+      "Sailing tours",
+      "Meditation cave",
+      "Wine tastings",
+      "Photography concierge"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d"
+    ],
+    "affiliateUrl": "https://www.booking.com/",
+    "shortDescription": "Cliffside suites in Oia with Tripolio sunset rituals and sailing charters.",
+    "description": "Santorini Sunset Collective layers Cycladic design with curated rituals. Book through Tripolio for private caldera sails, photography concierge sessions, and meditation caves at golden hour."
+  },
+  {
+    "id": "dubai-skyline-residences",
+    "name": "Dubai Skyline Residences",
+    "price": "$340/night",
+    "rating": 4.6,
+    "location": {
+      "city": "Dubai",
+      "country": "UAE",
+      "latitude": 25.2048,
+      "longitude": 55.2708
+    },
+    "amenities": [
+      "Infinity sky pool",
+      "Desert excursions",
+      "Personal shopper",
+      "Hammam spa",
+      "Micro-gallery",
+      "Chauffeur service"
+    ],
+    "photos": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
+      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
+    ],
+    "affiliateUrl": "https://www.expedia.com/",
+    "shortDescription": "Skyline suites atop Downtown Dubai with Tripolio-curated desert and design tours.",
+    "description": "Dubai Skyline Residences elevate luxury stays with curated desert safaris, souk personal shoppers, and in-house art tours orchestrated by Tripolio hosts."
   }
 ]
