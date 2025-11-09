@@ -87,7 +87,7 @@ export default function HomePage({ featuredPosts }: HomeProps) {
             Discover &amp; Book Unique Experiences Around the World 🌍
           </h1>
           <p className="text-lg text-slate-600 lg:text-xl">
-            Tripolio surfaces the world’s most inspiring itineraries, hands-on tours, and curated hotel stays. Browse, compare, and click-through to book with our verified travel partners.
+            Tripolio surfaces inspiring itineraries, hands-on tours, and boutique stays so you can plan every moment with confidence. Browse, compare, and book through partners we trust.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="#destinations" className="button-primary">
@@ -99,9 +99,9 @@ export default function HomePage({ featuredPosts }: HomeProps) {
           </div>
           <dl className="grid gap-6 sm:grid-cols-3">
             {[
-              { label: "Affiliate partners", value: "40+" },
-              { label: "Guides scheduled", value: "50 posts" },
-              { label: "New drops", value: "Every 4 days" },
+              { label: "Curated guides", value: "50+" },
+              { label: "Featured destinations", value: "8 cities" },
+              { label: "New experiences", value: "Every 4 days" },
             ].map((item) => (
               <div key={item.label} className="rounded-3xl bg-slate-50 p-4 shadow-soft">
                 <dt className="text-xs uppercase tracking-wide text-slate-500">{item.label}</dt>
@@ -114,11 +114,11 @@ export default function HomePage({ featuredPosts }: HomeProps) {
           <div className="space-y-6 text-slate-600">
             <h2 className="text-2xl font-semibold text-ink">Why Tripolio works for modern travelers</h2>
             <ul className="space-y-4 text-sm leading-relaxed">
-              <li>• SEO-backed itineraries that surface affiliate-friendly keywords.</li>
-              <li>• Supabase-powered scheduler keeps fresh content flowing automatically.</li>
-              <li>• Mobile-first layouts featuring lazy-loaded hero imagery and destination cards.</li>
+              <li>• Handpicked itineraries crafted by Tripolio editors and local experts.</li>
+              <li>• Trusted booking partners with transparent pricing and exclusive perks.</li>
+              <li>• Mobile-first planning tools with fast-loading imagery and destination cards.</li>
             </ul>
-            <p className="text-xs text-slate-400">Affiliate disclosure: Tripolio may earn commissions from partner links. Booking costs stay the same for you.</p>
+            <p className="text-xs text-slate-400">We partner only with travel brands we believe in—booking through Tripolio keeps prices the same for you.</p>
           </div>
         </div>
       </div>
