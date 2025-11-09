@@ -82,23 +82,15 @@ See [`./.github/workflows/daily-scheduler.yml`](./.github/workflows/daily-schedu
 
 ### Vercel Cron (optional)
 
-Add a cron job in `vercel.json` or via the dashboard:
+Add a cron job in the Vercel dashboard that points to:
 
-```json
-{
-  "crons": [
-    {
-      "path": "/api/scheduler/run",
-      "schedule": "0 6 * * *",
-      "headers": {
-        "x-scheduler-secret": "@scheduler-secret"
-      }
-    }
-  ]
-}
+```
+https://your-domain.com/api/scheduler/run?secret=$SCHEDULER_SECRET
 ```
 
-Store `scheduler-secret` as an encrypted Vercel environment variable.
+- Schedule: `0 6 * * *` (daily at 06:00 UTC).
+- Use the same `SCHEDULER_SECRET` environment variable when creating the cron job so the request stays private.
+- If you prefer, skip the cron and rely solely on the GitHub Action; both paths hit the same scheduler endpoint.
 
 ## Admin Dashboard
 
