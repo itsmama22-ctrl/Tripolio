@@ -78,50 +78,106 @@ export default function HomePage({ featuredPosts }: HomeProps) {
           content="Browse destinations, read automated guides, and monetise bookings with Tripolio’s affiliate network."
         />
       </Head>
-      <div className="section mt-12 grid gap-12 lg:grid-cols-[1.2fr,0.8fr] lg:items-center">
-        <div className="space-y-6">
-          <div className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-            Travel affiliate hub
-          </div>
-          <h1 className="text-4xl font-bold text-ink sm:text-5xl lg:text-6xl">
-            Discover &amp; Book Unique Experiences Around the World 🌍
-          </h1>
-          <p className="text-lg text-slate-600 lg:text-xl">
-            Tripolio surfaces inspiring itineraries, hands-on tours, and boutique stays so you can plan every moment with confidence. Browse, compare, and book through partners we trust.
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="#destinations" className="button-primary">
-              Explore top destinations
-            </Link>
-            <Link href="/blog" className="button-secondary">
-              Read travel stories
-            </Link>
-          </div>
-          <dl className="grid gap-6 sm:grid-cols-3">
-            {[
-              { label: "Curated guides", value: "50+" },
-              { label: "Featured destinations", value: "8 cities" },
-              { label: "New experiences", value: "Every 4 days" },
-            ].map((item) => (
-              <div key={item.label} className="rounded-3xl bg-slate-50 p-4 shadow-soft">
-                <dt className="text-xs uppercase tracking-wide text-slate-500">{item.label}</dt>
-                <dd className="text-2xl font-semibold text-ink">{item.value}</dd>
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#e8f0ff] via-white to-[#fff7f0]">
+        <div className="pointer-events-none absolute inset-0 opacity-70">
+          <div className="absolute -top-24 -left-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
+        </div>
+        <div className="section relative z-10 grid gap-12 py-16 lg:grid-cols-[1.1fr,0.9fr] lg:items-center">
+          <div className="space-y-7">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary shadow-soft backdrop-blur">
+              <span>It’s time to go</span>
+              <span role="img" aria-hidden>
+                🚀
+              </span>
+            </div>
+            <h1 className="text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl">
+              Don’t just imagine it, make it happen. Travel.
+            </h1>
+            <p className="text-lg text-slate-600 lg:text-xl">
+              Tripolio surfaces inspiring itineraries, hands-on tours, and boutique stays so you can plan every moment with confidence. Browse, compare, and book through partners we trust.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link href="#destinations" className="button-primary">
+                Explore top destinations
+              </Link>
+              <Link href="/blog" className="button-secondary">
+                Read travel stories
+              </Link>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-4">
+                <div className="flex -space-x-3">
+                  {[
+                    "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?auto=format&fit=crop&w=80&q=80",
+                    "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=80&q=80",
+                    "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=80&q=80",
+                    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80",
+                  ].map((src, index) => (
+                    <Image
+                      key={src}
+                      src={src}
+                      alt="Traveler avatar"
+                      width={40}
+                      height={40}
+                      className="h-10 w-10 rounded-full border-2 border-white object-cover"
+                    />
+                  ))}
+                  <div className="-ml-3 flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-primary/90 text-xs font-semibold text-white">
+                    +24
+                  </div>
+                </div>
+                <p className="text-sm text-slate-500">
+                  <span className="font-semibold text-primary">24 travelers</span> built a Tripolio itinerary in the last 24 hours.
+                </p>
               </div>
-            ))}
-          </dl>
-        </div>
-        <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-primary/10 via-white to-accent/10 p-8 shadow-card">
-          <div className="space-y-6 text-slate-600">
-            <h2 className="text-2xl font-semibold text-ink">Why Tripolio works for modern travelers</h2>
-            <ul className="space-y-4 text-sm leading-relaxed">
-              <li>• Handpicked itineraries crafted by Tripolio editors and local experts.</li>
-              <li>• Trusted booking partners with transparent pricing and exclusive perks.</li>
-              <li>• Mobile-first planning tools with fast-loading imagery and destination cards.</li>
-            </ul>
-            <p className="text-xs text-slate-400">We partner only with travel brands we believe in—booking through Tripolio keeps prices the same for you.</p>
+              <div className="rounded-3xl bg-white/90 p-6 shadow-card backdrop-blur">
+                <div className="flex flex-col gap-4 md:grid md:grid-cols-5 md:items-center">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">Location</span>
+                    <p className="mt-1 text-sm font-medium text-ink">Search destinations</p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">Check in</span>
+                    <p className="mt-1 text-sm text-slate-600">Add dates</p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">Check out</span>
+                    <p className="mt-1 text-sm text-slate-600">Add dates</p>
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-slate-400">Guests</span>
+                    <p className="mt-1 text-sm text-slate-600">Add travelers</p>
+                  </div>
+                  <button type="button" className="button-primary w-full justify-center md:w-auto md:justify-self-end">
+                    Search trips
+                  </button>
+                </div>
+                <div className="mt-5 grid gap-3 text-xs text-slate-500 sm:grid-cols-3">
+                  <p>• Curated experiences in 50+ cities worldwide</p>
+                  <p>• Real-time price monitoring with partner perks</p>
+                  <p>• Cancel anytime policies on highlighted stays</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative flex items-center justify-center">
+            <div className="relative h-[420px] w-full max-w-[540px] overflow-hidden rounded-[40px] bg-gradient-to-br from-primary/20 via-white to-accent/10 shadow-card">
+              <Image
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+                alt="Travel collage illustration"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-x-6 bottom-6 rounded-2xl bg-white/90 p-4 text-sm shadow-soft backdrop-blur">
+                <p className="font-semibold text-ink">Tripolio Playbooks</p>
+                <p className="mt-1 text-slate-500">Plan flights, hotels, and day-by-day activities in minutes.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="destinations" className="section mt-24 space-y-10">
         <header className="space-y-3 text-center">
