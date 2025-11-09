@@ -16,15 +16,30 @@ export interface Stay {
   description: string;
 }
 
+export interface AffiliateCTA {
+  headline: string;
+  body: string;
+  ctaLabel: string;
+  url: string;
+}
+
 export interface BlogPost {
+  id: string;
   slug: string;
   title: string;
   excerpt: string;
+  content: string;
+  seoTitle: string;
+  seoDescription: string;
+  imageUrl: string;
+  imageAlt: string;
+  author: string;
+  dateScheduled: string;
+  published: boolean;
   publishedAt: string;
-  coverImage: string;
-  category?: string;
-  tags?: string[];
-  content?: string;
+  readingTime: number;
+  affiliateCta: AffiliateCTA[];
+  createdAt: string;
 }
 
 export interface NearbyPlace {

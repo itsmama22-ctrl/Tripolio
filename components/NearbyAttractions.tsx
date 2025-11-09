@@ -82,7 +82,7 @@ export function NearbyAttractions({ latitude, longitude }: NearbyAttractionsProp
       </div>
       <ul className="mt-6 space-y-4">
         {places.slice(0, 6).map((place) => (
-          <li key={place.id} className="flex flex-col gap-2 rounded-2xl bg-beige/60 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+          <li key={place.id} className="flex flex-col gap-2 rounded-2xl bg-slate-100 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="flex items-center gap-2 font-medium text-slate-900">
                 <HiOutlineMap className="h-5 w-5 text-primary" aria-hidden="true" />

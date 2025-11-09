@@ -86,7 +86,7 @@ export function StayCard({ stay, variant = "grid" }: StayCardProps) {
         <p className="text-sm text-slate-600">{stay.shortDescription}</p>
         <div className="flex flex-wrap gap-2 text-xs text-slate-500">
           {stay.amenities.slice(0, 6).map((amenity) => (
-            <span key={amenity} className="rounded-full bg-beige/80 px-3 py-1 text-slate-700">
+            <span key={amenity} className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
               {amenity}
             </span>
           ))}

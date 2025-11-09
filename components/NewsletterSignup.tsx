@@ -28,7 +28,7 @@ export function NewsletterSignup() {
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
-            <button type="submit" className="button-accent w-full md:w-auto">
+            <button type="submit" className="button-primary w-full md:w-auto">
               {submitted ? "Subscribed" : "Join"}
             </button>
           </form>

@@ -33,7 +33,7 @@ export default function DownloadPage() {
           <p className="text-xs text-slate-500">Android waitlist launching soon. Subscribe to the newsletter for updates.</p>
         </div>
         <div className="rounded-3xl bg-white p-6 shadow-card">
-          <div className="relative aspect-[9/19] w-full overflow-hidden rounded-3xl bg-beige">
+          <div className="relative aspect-[9/19] w-full overflow-hidden rounded-3xl bg-slate-100">
             <Image src="/assets/app-mock.svg" alt="Tripolio app mockup" fill className="object-cover" />
           </div>
           <p className="mt-4 text-center text-xs text-slate-500">

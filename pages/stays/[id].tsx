@@ -39,7 +39,7 @@ export default function StayDetailPage({ stay }: StayDetailProps) {
           </span>
           <h1 className="text-4xl font-bold text-slate-900">{stay.name}</h1>
           <div className="flex flex-wrap items-center gap-3 text-sm text-slate-600">
-            <span className="rounded-full bg-beige/80 px-4 py-1 font-semibold text-slate-700">{stay.price}</span>
+            <span className="rounded-full bg-slate-100 px-4 py-1 font-semibold text-slate-700">{stay.price}</span>
             <span className="rounded-full bg-white px-4 py-1 shadow-card">Rating {stay.rating}</span>
           </div>
         </header>
@@ -58,7 +58,7 @@ export default function StayDetailPage({ stay }: StayDetailProps) {
               <h3 className="text-lg font-semibold text-slate-900">Amenities</h3>
               <ul className="mt-3 grid grid-cols-1 gap-2 text-sm text-slate-600 md:grid-cols-2">
                 {stay.amenities.map((amenity) => (
-                  <li key={amenity} className="rounded-full bg-beige/80 px-4 py-2">
+                  <li key={amenity} className="rounded-full bg-slate-100 px-4 py-2">
                     {amenity}
                   </li>
                 ))}

@@ -11,7 +11,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ onSearchSubmit, spotlight, spotlightCount }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-white to-beige py-20 sm:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-white to-slate-100 py-20 sm:py-24">
       <div className="absolute inset-0 -z-10">
         <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />

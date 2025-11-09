@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { BlogPost } from "../types";
 
@@ -7,31 +8,21 @@ interface GuideCardProps {
 
 export function GuideCard({ post }: GuideCardProps) {
   return (
-    <article className="flex min-h-[280px] flex-col overflow-hidden rounded-3xl bg-white shadow-card transition-transform hover:-translate-y-1">
-      <div
-        className="h-32 w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${post.coverImage})` }}
-      />
+    <article className="flex min-h-[320px] flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card">
+      <div className="relative h-40 w-full">
+        <Image src={post.imageUrl} alt={post.imageAlt} fill className="object-cover" sizes="(min-width: 1024px) 25vw, 90vw" />
+      </div>
       <div className="flex flex-1 flex-col justify-between gap-4 p-6">
         <div className="space-y-3">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-            {post.category ?? "Guides"}
-          </span>
-          <h3 className="text-lg font-semibold text-slate-900">{post.title}</h3>
+          <p className="text-xs uppercase tracking-wide text-slate-400">
+            {new Date(post.publishedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })} · {post.readingTime} min read
+          </p>
+          <h3 className="text-lg font-semibold text-ink">{post.title}</h3>
           <p className="text-sm text-slate-600 line-clamp-3">{post.excerpt}</p>
         </div>
-        <div className="flex items-center justify-between text-xs text-slate-500">
-          <span>
-            {new Date(post.publishedAt).toLocaleDateString(undefined, {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            })}
-          </span>
-          <Link href={`/blog/${post.slug}`} className="text-sm font-semibold text-primary hover:text-accent">
-            Read guide
-          </Link>
-        </div>
+        <Link href={`/blog/${post.slug}`} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
+          Read guide →
+        </Link>
       </div>
     </article>
   );
