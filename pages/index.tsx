@@ -7,14 +7,46 @@ import { fetchPublishedPosts } from "../lib/blog";
 import { absoluteUrl } from "../lib/seo";
 
 const destinations = [
-  { name: "Paris, France", image: "/images/paris.jpg", link: "https://klook.tpm.lv/E7mvBpuw" },
-  { name: "Tokyo, Japan", image: "/images/tokyo.jpg", link: "https://klook.tpm.lv/jVvDqH2u" },
-  { name: "New York, USA", image: "/images/newyork.jpg", link: "https://klook.tpm.lv/SHtqk4Ad" },
-  { name: "Marrakesh, Morocco", image: "/images/marrakesh.jpg", link: "https://klook.tpm.lv/DPWpNJ4a" },
-  { name: "Dubai, UAE", image: "/images/dubai.jpg", link: "https://klook.tpm.lv/KD3ANcN8" },
-  { name: "Bali, Indonesia", image: "/images/bali.jpg", link: "https://klook.tpm.lv/dmie9vAB" },
-  { name: "London, UK", image: "/images/london.jpg", link: "https://klook.tpm.lv/Rm6IcUh7" },
-  { name: "Rome, Italy", image: "/images/rome.jpg", link: "https://klook.tpm.lv/ZLwbfXUX" },
+  {
+    name: "Paris, France",
+    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/E7mvBpuw",
+  },
+  {
+    name: "Tokyo, Japan",
+    image: "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/jVvDqH2u",
+  },
+  {
+    name: "New York, USA",
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/SHtqk4Ad",
+  },
+  {
+    name: "Marrakesh, Morocco",
+    image: "https://images.unsplash.com/photo-1548783307-f63adc2d0439?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/DPWpNJ4a",
+  },
+  {
+    name: "Dubai, UAE",
+    image: "https://images.unsplash.com/photo-1526481280695-3c469928b67b?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/KD3ANcN8",
+  },
+  {
+    name: "Bali, Indonesia",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/dmie9vAB",
+  },
+  {
+    name: "London, UK",
+    image: "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/Rm6IcUh7",
+  },
+  {
+    name: "Rome, Italy",
+    image: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80",
+    link: "https://klook.tpm.lv/ZLwbfXUX",
+  },
 ];
 
 interface HomeProps {
