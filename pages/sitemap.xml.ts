@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { GetServerSideProps } from "next";
 import { fetchPublishedPosts } from "../lib/blog";
 import { absoluteUrl } from "../lib/seo";
 
@@ -16,7 +16,9 @@ ${urls}
 </urlset>`;
 }
 
-export default async function handler(_req: NextApiRequest, res: NextApiResponse) {
+const Sitemap = () => null;
+
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const staticPaths = [
     { loc: absoluteUrl("/") },
     { loc: absoluteUrl("/destinations") },
@@ -41,6 +43,13 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
 
   const xml = generateSitemapXml([...staticPaths, ...postPaths]);
   res.setHeader("Content-Type", "application/xml");
-  res.status(200).send(xml);
-}
+  res.write(xml);
+  res.end();
+
+  return {
+    props: {},
+  };
+};
+
+export default Sitemap;
 

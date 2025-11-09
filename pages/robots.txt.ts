@@ -1,7 +1,9 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { GetServerSideProps } from "next";
 import { absoluteUrl } from "../lib/seo";
 
-export default function handler(_req: NextApiRequest, res: NextApiResponse) {
+const Robots = () => null;
+
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const sitemapUrl = absoluteUrl("/sitemap.xml");
   const body = `User-agent: *
 Allow: /
@@ -10,6 +12,13 @@ Sitemap: ${sitemapUrl}
 `;
 
   res.setHeader("Content-Type", "text/plain");
-  res.status(200).send(body);
-}
+  res.write(body);
+  res.end();
+
+  return {
+    props: {},
+  };
+};
+
+export default Robots;
 
