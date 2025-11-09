@@ -27,15 +27,20 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: absoluteUrl("/privacy") },
   ];
 
-  const { posts } = await fetchPublishedPosts(1, 500);
-  const postPaths = posts.map((post) => ({
-    loc: absoluteUrl(`/blog/${post.slug}`),
-    lastmod: new Date(post.publishedAt).toISOString(),
-  }));
+  let postPaths: { loc: string; lastmod?: string }[] = [];
+  try {
+    const { posts } = await fetchPublishedPosts(1, 500);
+    postPaths = posts.map((post) => ({
+      loc: absoluteUrl(`/blog/${post.slug}`),
+      lastmod: new Date(post.publishedAt).toISOString(),
+    }));
+  } catch (error) {
+    console.error("[Sitemap] Falling back to static paths", error);
+    postPaths = [];
+  }
 
   const xml = generateSitemapXml([...staticPaths, ...postPaths]);
   res.setHeader("Content-Type", "application/xml");
-  res.write(xml);
-  res.end();
+  res.status(200).send(xml);
 }
 
