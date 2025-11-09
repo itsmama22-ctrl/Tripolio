@@ -24,12 +24,12 @@ const destinations = [
   },
   {
     name: "Marrakesh, Morocco",
-    image: "https://images.unsplash.com/photo-1548783307-f63adc2d0439?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1547564490-67e3f2d0f835?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     link: "https://klook.tpm.lv/DPWpNJ4a",
   },
   {
     name: "Dubai, UAE",
-    image: "https://images.unsplash.com/photo-1526481280695-3c469928b67b?auto=format&fit=crop&w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1504274066651-8d32a3b58c2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     link: "https://klook.tpm.lv/KD3ANcN8",
   },
   {
