@@ -13,7 +13,11 @@ function buildImageUrl(url: string): string {
   if (!url) {
     return "/assets/stay-placeholder.svg";
   }
-  return url.includes("?") ? `${url}&auto=format&fit=crop&w=1600&q=80` : `${url}?auto=format&fit=crop&w=1600&q=80`;
+  if (url.includes("source.unsplash.com")) {
+    return url;
+  }
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}auto=format&fit=crop&w=1600&q=80`;
 }
 
 const DEFAULT_AFFILIATE_URL = "https://klook.tpm.lv/upXwWEwX";

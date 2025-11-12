@@ -20,7 +20,7 @@
     "photos": [
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
     ],
     "affiliateUrl": "https://www.booking.com/",
@@ -74,7 +74,7 @@
       "Guided aurora tours"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/london.jpg",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1445019980597-93fa8acb246c"
@@ -104,7 +104,7 @@
     "photos": [
       "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "/images/tokyo.jpg",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
     ],
     "affiliateUrl": "https://www.booking.com/",
@@ -159,9 +159,9 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1469796466635-455ede028aca",
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba"
+      "/images/bali.jpg"
     ],
     "affiliateUrl": "https://www.airbnb.com/",
     "shortDescription": "Slow-travel surf house with community vibes, creative workshops, and oceanfront suites.",
@@ -187,7 +187,7 @@
       "Wellness studio"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
+      "/images/rome.jpg",
       "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
@@ -218,7 +218,7 @@
     "photos": [
       "https://images.unsplash.com/photo-1445019980597-93fa8acb246c",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
     ],
     "affiliateUrl": "https://www.expedia.com/",
@@ -275,7 +275,7 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1469796466635-455ede028aca",
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/marrakesh.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
     ],
@@ -306,7 +306,7 @@
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d"
+      "/images/paris.jpg"
     ],
     "affiliateUrl": "https://www.airbnb.com/s/Barcelona--Spain/homes?adults=2&tripolio=1",
     "shortDescription": "Design lofts in El Born with Tripolio-curated tapas nights and design tours.",
@@ -332,7 +332,7 @@
       "Star guide"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1548783307-f63adc7bcd66",
+      "/images/dubai.jpg",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
@@ -363,7 +363,7 @@
     "photos": [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "/images/bali.jpg",
       "https://images.unsplash.com/photo-1469796466635-455ede028aca"
     ],
     "affiliateUrl": "https://www.expedia.com/",
@@ -390,7 +390,7 @@
       "Train coordination"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/newyork.jpg",
       "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
       "https://images.unsplash.com/photo-1469796466635-455ede028aca",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
@@ -420,7 +420,7 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
     ],
@@ -478,8 +478,8 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/tokyo.jpg",
+      "/images/dubai.jpg",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"
     ],
     "affiliateUrl": "https://www.expedia.com/",
@@ -507,8 +507,8 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "/images/paris.jpg",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
     ],
     "affiliateUrl": "https://www.airbnb.com/",
@@ -594,9 +594,9 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/rome.jpg",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d"
+      "/images/rome.jpg"
     ],
     "affiliateUrl": "https://www.booking.com/",
     "shortDescription": "Cliffside suites in Oia with Tripolio sunset rituals and sailing charters.",
@@ -651,7 +651,7 @@
       "Tea ceremonies"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "/images/tokyo.jpg",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
@@ -680,10 +680,10 @@
       "Rooftop deck"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "/images/marrakesh.jpg",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
+      "/images/newyork.jpg"
     ],
     "affiliateUrl": "https://www.airbnb.com/",
     "shortDescription": "Budget-savvy design studios in Alfama with Tripolio cowork credits and tram perks.",
@@ -739,9 +739,9 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1469796466635-455ede028aca",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba"
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef"
     ],
     "affiliateUrl": "https://www.expedia.com/",
     "shortDescription": "Adriatic cabanas with Tripolio-provisioned kayaks and historic walking tours.",
@@ -798,7 +798,7 @@
     "photos": [
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2100d",
+      "/images/paris.jpg",
       "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
     ],
     "affiliateUrl": "https://www.booking.com/",
@@ -826,7 +826,7 @@
     ],
     "photos": [
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1505691938895-02d9f47f7d12",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1469796466635-455ede028aca",
       "https://images.unsplash.com/photo-1505691723518-36a5ac3be353"
     ],
@@ -854,7 +854,7 @@
       "Family board games"
     ],
     "photos": [
-      "https://images.unsplash.com/photo-1505691726460-30dc7b7d5cba",
+      "/images/london.jpg",
       "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a"

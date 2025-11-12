@@ -5,8 +5,8 @@ import { LogScope, logError, logInfo } from "../../../lib/logger";
 const schedulerSecret = process.env.SCHEDULER_SECRET;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== "POST") {
-    res.setHeader("Allow", "POST");
+  if (req.method !== "POST" && req.method !== "GET") {
+    res.setHeader("Allow", "POST, GET");
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
@@ -14,7 +14,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(500).json({ error: "Scheduler secret not configured" });
   }
 
-  const providedSecret = req.headers["x-scheduler-secret"] ?? req.body?.secret ?? req.query.secret;
+  const secretFromQuery = Array.isArray(req.query.secret) ? req.query.secret[0] : req.query.secret;
+
+  const providedSecret =
+    req.headers["x-scheduler-secret"] ??
+    (req.method === "POST" ? req.body?.secret : undefined) ??
+    secretFromQuery;
   if (providedSecret !== schedulerSecret) {
     return res.status(401).json({ error: "Unauthorized" });
   }
