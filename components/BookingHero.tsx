@@ -93,20 +93,32 @@ export default function BookingHero({
     const payload: BookingFormState = { ...formState };
     if (onSearch) {
       onSearch(payload);
-    } else {
-      const params = new URLSearchParams();
-      const trimmedDestination = payload.destination.trim();
-      if (trimmedDestination) {
-        params.set("location", trimmedDestination);
-        params.set("term", trimmedDestination.split(",")[0]);
-      }
-      if (!payload.showHotels) {
-        params.set("filter", "airbnb");
-      } else {
-        params.set("filter", "all");
-      }
-      router.push(`/list?${params.toString()}`);
+      return;
     }
+
+    const trimmedDestination = payload.destination.trim();
+    if (trimmedDestination && typeof window !== "undefined") {
+      const [cityPart] = trimmedDestination.split(",");
+      const city = cityPart?.trim() || trimmedDestination;
+      const searchParams = new URLSearchParams();
+      searchParams.set("keyword", city);
+
+      if (payload.departDate) {
+        searchParams.set("startDate", payload.departDate);
+      }
+      if (payload.returnDate) {
+        searchParams.set("endDate", payload.returnDate);
+      }
+      if (payload.passengers) {
+        searchParams.set("adults", payload.passengers);
+      }
+
+      const klookUrl = `https://www.klook.com/search/?${searchParams.toString()}`;
+      window.location.href = klookUrl;
+      return;
+    }
+
+    router.push("/list");
   };
 
   return (

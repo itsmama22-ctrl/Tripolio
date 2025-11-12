@@ -31,6 +31,18 @@ export default function ListPage() {
   };
 
   const initialFilter = filterValue || "all";
+  const hasSearch = Boolean(locationValue || termValue);
+
+  const klookUrl = useMemo(() => {
+    if (!hasSearch) return null;
+    const params = new URLSearchParams();
+    if (locationValue) params.set("keyword", locationValue);
+    if (termValue && !params.has("keyword")) params.set("keyword", termValue);
+    if (router.query.depart) params.set("startDate", String(router.query.depart));
+    if (router.query.return) params.set("endDate", String(router.query.return));
+    if (router.query.passengers) params.set("adults", String(router.query.passengers));
+    return `https://www.klook.com/search/?${params.toString() || ""}`;
+  }, [hasSearch, locationValue, router.query.depart, router.query.passengers, router.query.return, termValue]);
 
   return (
     <Layout>
@@ -55,6 +67,23 @@ export default function ListPage() {
             initialLocation={locationValue}
             initialFilter={initialFilter}
           />
+          {klookUrl ? (
+            <div className="rounded-3xl border border-primary/20 bg-primary/5 p-4 text-sm text-primary">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <span>
+                  Looking for live partner availability? Continue your <strong>{locationValue || termValue}</strong> search on Klook.
+                </span>
+                <a
+                  href={klookUrl}
+                  target="_blank"
+                  rel="nofollow noopener sponsored"
+                  className="button-primary inline-flex w-full justify-center sm:w-auto"
+                >
+                  Open Klook Results
+                </a>
+              </div>
+            </div>
+          ) : null}
         </div>
         <div className="mt-10 grid gap-8">
           {filtered.length ? (
