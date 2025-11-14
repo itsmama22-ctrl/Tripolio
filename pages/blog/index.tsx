@@ -1,6 +1,5 @@
 import type { GetServerSideProps } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "../../components/Layout";
 import { fetchPublishedPosts } from "../../lib/blog";
@@ -53,17 +52,20 @@ export default function BlogPage({ posts, page, totalPages }: BlogPageProps) {
               day: "numeric",
               year: "numeric",
             });
-            const isRandomUnsplash = post.imageUrl?.includes("source.unsplash.com");
+            const placeholder = "/assets/stay-placeholder.svg";
+            const imageSrc = post.imageUrl || placeholder;
             return (
               <article key={post.slug} className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card">
               <div className="relative h-52 w-full">
-                <Image
-                  src={post.imageUrl}
+                <img
+                  src={imageSrc}
                   alt={post.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 90vw"
-                  unoptimized={isRandomUnsplash}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  onError={(event) => {
+                    event.currentTarget.onerror = null;
+                    event.currentTarget.src = placeholder;
+                  }}
                 />
               </div>
               <div className="flex flex-1 flex-col gap-4 p-6">
