@@ -35,9 +35,12 @@ export default function ListPage() {
 
   const klookUrl = useMemo(() => {
     if (!hasSearch) return null;
+    const keyword = locationValue || termValue;
+    if (!keyword) return null;
     const params = new URLSearchParams();
-    if (locationValue) params.set("keyword", locationValue);
-    if (termValue && !params.has("keyword")) params.set("keyword", termValue);
+    params.set("keyword", keyword);
+    params.set("utm_source", "tripolio");
+    params.set("city", keyword.split(",")[0]?.trim() ?? keyword);
     if (router.query.depart) params.set("startDate", String(router.query.depart));
     if (router.query.return) params.set("endDate", String(router.query.return));
     if (router.query.passengers) params.set("adults", String(router.query.passengers));

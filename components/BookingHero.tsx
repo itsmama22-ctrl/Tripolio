@@ -98,10 +98,11 @@ export default function BookingHero({
 
     const trimmedDestination = payload.destination.trim();
     if (trimmedDestination && typeof window !== "undefined") {
+      const keyword = trimmedDestination;
       const [cityPart] = trimmedDestination.split(",");
       const city = cityPart?.trim() || trimmedDestination;
       const searchParams = new URLSearchParams();
-      searchParams.set("keyword", city);
+      searchParams.set("keyword", keyword);
 
       if (payload.departDate) {
         searchParams.set("startDate", payload.departDate);
@@ -112,6 +113,9 @@ export default function BookingHero({
       if (payload.passengers) {
         searchParams.set("adults", payload.passengers);
       }
+
+      searchParams.set("city", city);
+      searchParams.set("utm_source", "tripolio");
 
       const klookUrl = `https://www.klook.com/search/?${searchParams.toString()}`;
       window.location.href = klookUrl;
