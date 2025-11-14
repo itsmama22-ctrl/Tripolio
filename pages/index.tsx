@@ -155,30 +155,37 @@ export default function HomePage({ featuredPosts }: HomeProps) {
           </Link>
         </header>
         <div className="grid gap-6 md:grid-cols-3">
-          {featuredPosts.map((post) => (
-            <article key={post.slug} className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card">
-              <div className="relative h-48 w-full">
-                <Image
-                  src={post.imageUrl}
-                  alt={post.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 90vw"
-                />
-              </div>
-              <div className="flex flex-1 flex-col gap-4 p-6">
-                <div className="flex items-center justify-between text-xs uppercase tracking-wide text-slate-400">
-                  <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
-                  <span>{post.readingTime} min read</span>
+          {featuredPosts.map((post) => {
+            const placeholder = "/assets/stay-placeholder.svg";
+            const imageSrc = post.imageUrl || placeholder;
+            return (
+              <article key={post.slug} className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <img
+                    src={imageSrc}
+                    alt={post.imageAlt}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                    onError={(event) => {
+                      event.currentTarget.onerror = null;
+                      event.currentTarget.src = placeholder;
+                    }}
+                  />
                 </div>
-                <h3 className="text-lg font-semibold text-ink">{post.title}</h3>
-                <p className="text-sm text-slate-600">{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
-                  Read guide →
-                </Link>
-              </div>
-            </article>
-          ))}
+                <div className="flex flex-1 flex-col gap-4 p-6">
+                  <div className="flex items-center justify-between text-xs uppercase tracking-wide text-slate-400">
+                    <span>{new Date(post.publishedAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
+                    <span>{post.readingTime} min read</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-ink">{post.title}</h3>
+                  <p className="text-sm text-slate-600">{post.excerpt}</p>
+                  <Link href={`/blog/${post.slug}`} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                    Read guide →
+                  </Link>
+                </div>
+              </article>
+            );
+          })}
           {featuredPosts.length === 0 && (
             <div className="col-span-full rounded-3xl border border-dashed border-slate-200 p-12 text-center text-slate-500">
               Scheduled posts will appear here after you configure Supabase or add placeholder content.
