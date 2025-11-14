@@ -78,7 +78,15 @@ export default function BlogPostPage({ post, related }: BlogPostPageProps) {
           <p className="text-base text-slate-600">{post.excerpt}</p>
           <SocialShare title={post.title} url={canonicalUrl} />
           <div className="relative overflow-hidden rounded-[32px]">
-            <Image src={post.imageUrl} alt={post.imageAlt} width={1600} height={900} className="h-auto w-full object-cover" priority />
+            <Image
+              src={post.imageUrl}
+              alt={post.imageAlt}
+              width={1600}
+              height={900}
+              className="h-auto w-full object-cover"
+              priority
+              unoptimized={post.imageUrl?.includes("source.unsplash.com")}
+            />
           </div>
         </header>
 

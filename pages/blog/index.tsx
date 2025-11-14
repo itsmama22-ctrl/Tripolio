@@ -53,6 +53,7 @@ export default function BlogPage({ posts, page, totalPages }: BlogPageProps) {
               day: "numeric",
               year: "numeric",
             });
+            const isRandomUnsplash = post.imageUrl?.includes("source.unsplash.com");
             return (
               <article key={post.slug} className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card">
               <div className="relative h-52 w-full">
@@ -62,6 +63,7 @@ export default function BlogPage({ posts, page, totalPages }: BlogPageProps) {
                   fill
                   className="object-cover"
                   sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 90vw"
+                  unoptimized={isRandomUnsplash}
                 />
               </div>
               <div className="flex flex-1 flex-col gap-4 p-6">
